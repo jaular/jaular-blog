@@ -28,7 +28,7 @@ export default function PostPage({ source, frontMatter }) {
   return (
     <Container title={frontMatter.title} navigation={navigation}>
       <article className="space-y-8">
-        <h1 className="text-3xl font-bold tracking-tight text-black-500 dark:text-white md:text-5xl">
+        <h1 className="text-3xl font-bold tracking-tight text-black-500 dark:text-gray-200 md:text-5xl">
           {frontMatter.title}
         </h1>
 

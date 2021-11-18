@@ -16,7 +16,7 @@ export default function Banner(props) {
       </div>
       <div className="flex items-center justify-center text-left">
         <div className="space-y-4">
-          <h1 className="text-3xl font-bold tracking-tight text-black-500 dark:text-white md:text-5xl">
+          <h1 className="text-3xl font-bold tracking-tight text-black-500 dark:text-gray-200 md:text-5xl">
             {title}
           </h1>
           <p className="text-lg text-gray-700 dark:text-gray-400 md:text-xl">

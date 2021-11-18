@@ -16,7 +16,7 @@ export default function Example({ navigation }) {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-700 bg-gray-300 rounded-md dark:text-gray-400 hover:text-black-500 dark:hover:text-white dark:bg-black-300">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-700 bg-gray-300 rounded-md dark:text-gray-400 hover:text-black-500 dark:hover:text-gray-200 dark:bg-black-300">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block w-6 h-6" aria-hidden="true" />
@@ -36,7 +36,7 @@ export default function Example({ navigation }) {
                         <a
                           className={classNames(
                             item.current
-                              ? "bg-gray-300 dark:bg-black-300 text-black-500 dark:text-white"
+                              ? "bg-gray-300 dark:bg-black-300 text-black-500 dark:text-gray-200"
                               : "text-gray-700 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-black-300",
                             "px-4 py-2 rounded-md text-sm font-medium"
                           )}
@@ -60,7 +60,7 @@ export default function Example({ navigation }) {
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href}>
                   <a
-                    className="block py-4 text-sm font-medium border-b border-gray-300 text-black-500 dark:text-white dark:border-black-100"
+                    className="block py-4 text-sm font-medium border-b border-gray-300 text-black-500 dark:text-gray-200 dark:border-black-100"
                     aria-current={item.current ? "page" : undefined}
                   >
                     {item.name}

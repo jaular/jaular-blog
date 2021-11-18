@@ -67,7 +67,7 @@ module.exports = {
               },
             },
             "h1,h2,h3,h4,strong": {
-              color: theme("colors.white"),
+              color: theme("colors.gray.200"),
               "scroll-margin-top": spacing[16],
             },
             "p,ul,ol,li": {

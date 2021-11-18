@@ -37,7 +37,7 @@ export default function Footer() {
               key={item.name}
               href={item.href}
               title={item.name}
-              className="text-black-500 dark:text-white hover:text-emerald-700 dark:hover:text-emerald-500"
+              className="text-black-500 dark:text-gray-200 hover:text-emerald-700 dark:hover:text-emerald-500"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -47,7 +47,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-6 md:mt-0 md:order-1">
-          <p className="text-sm font-medium text-center text-dark-500 dark:text-white">
+          <p className="text-sm font-medium text-center text-dark-500 dark:text-gray-200">
             JAular Blog
           </p>
         </div>

@@ -16,7 +16,7 @@ export default function ButtonTheme() {
 
   return (
     <button
-      className="p-2 text-gray-700 bg-gray-300 rounded-md dark:text-gray-400 dark:bg-black-300 hover:text-black-500 dark:hover:text-white"
+      className="p-2 text-gray-700 bg-gray-300 rounded-md dark:text-gray-400 dark:bg-black-300 hover:text-black-500 dark:hover:text-gray-200"
       onClick={() => switchTheme()}
     >
       <span className="sr-only">Theme</span>

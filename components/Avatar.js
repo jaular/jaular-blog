@@ -3,7 +3,7 @@ export default function Avatar({ name, publishedAt }) {
     <div className="flex">
       <div className="self-center flex-shrink-0 mr-2">
         <span className="inline-flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full dark:bg-black-300">
-          <span className="font-medium leading-none text-black-500 dark:text-white">
+          <span className="font-medium leading-none text-black-500 dark:text-gray-200">
             JA
           </span>
         </span>
