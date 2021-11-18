@@ -9,7 +9,7 @@ export default function Container(props) {
   const meta = {
     title: "Inicio",
     description: `Blog con contenido sobre programación, hecho con Next.js, Tailwind CSS y next-mdx-remote`,
-    image: "/static/hero-image.svg",
+    image: "https://jaular.vercel.app/static/banner.png",
     type: "website",
     ...customMeta,
   };

@@ -25,7 +25,7 @@ export default function Index() {
       <Banner
         title="JAular Blog"
         description="Blog con contenido sobre programación, hecho con Next.js, Tailwind CSS y next-mdx-remote"
-        imgUrl="/static/hero-image.svg"
+        imgUrl="/static/banner.svg"
         width="793"
         height="553"
       />
