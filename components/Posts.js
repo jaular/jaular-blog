@@ -12,7 +12,7 @@ export default function Posts(props) {
     .sort((a, b) => b.publishedAt - a.publishedAt);
 
   return (
-    <div className="grid gap-8 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-12">
+    <div className="grid gap-8 md:grid-cols-2 md:gap-x-8 md:gap-y-12">
       {orderByDateDesc.map((post) => (
         <Link
           key={post.title}
