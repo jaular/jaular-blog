@@ -1,0 +1,68 @@
+---
+title: JSX
+publishedBy: "José Aular"
+publishedAt: "2021-11-18"
+---
+
+<a aria-label="Unsplash" href="https://unsplash.com/photos/c8h0n7fSTqs">
+  <Image
+    alt={`jsx`}
+    title={`Ferenc Almasi`}
+    src={`/static/images/jsx/img.jpg`}
+    width={960}
+    height={600}
+  />
+</a>
+
+## Tabla de Contenido
+
+1.  [Concepto](/blog/jsx#concepto)
+2.  [Ejemplo](/blog/jsx#ejemplo)
+3.  [Referencias](/blog/jsx#referencias)
+
+## Concepto
+
+Esta curiosa sintaxis de etiquetas no es ni un string ni HTML.
+
+Se llama JSX, y es una extensión de la sintaxis de JavaScript.
+Recomendamos usarlo con React para describir cómo debería ser la interfaz de usuario.
+JSX puede recordarte a un lenguaje de plantillas, pero viene con todo el poder de JavaScript.
+**Es prácticamente como escribir HTML pero no estás escribiendo HTML, es JavaScript**.
+
+React al basar el desarrollo de apps en componentes,
+necesitamos crear elementos HTML que definan nuestro componente, por ejemplo `<div>`, `<p>`, `<img>`, etc...
+
+También necesitaremos indicar cuando se trata de componentes creados por nosotros con React,
+como puede ser un `<Image />`, `<List />`, etc...
+
+Lo único que has de tener en cuenta es que hay algunas palabras reservadas en JavaScript y JSX te obliga a nombrar
+algunos atributos de otra manera, como es el caso de las `class` que para definir clases de CSS que con JSX debemos
+escribir `className`.
+
+## Ejemplo
+
+```jsx:pages/Avatar.jsx
+export default function Avatar({ name, publishedAt }) {
+  return (
+    <div className="flex">
+      <div className="self-center flex-shrink-0 mr-2">
+        <span className="inline-flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full dark:bg-black-300">
+          <span className="font-medium leading-none text-black-500 dark:text-white">
+            JA
+          </span>
+        </span>
+      </div>
+      <div className="flex items-center">
+        <p className="text-sm text-gray-700 dark:text-gray-400">
+          {name} / {publishedAt}
+        </p>
+      </div>
+    </div>
+  );
+}
+```
+
+## Referencias
+
+- [React](https://es.reactjs.org/docs/introducing-jsx.html)
+- [Carlos Azaustre](https://carlosazaustre.es/jsx-para-novatos)
