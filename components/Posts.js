@@ -14,24 +14,23 @@ export default function Posts(props) {
   return (
     <div className="grid gap-8 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-12">
       {orderByDateDesc.map((post) => (
-        <div
+        <Link
           key={post.title}
-          className="p-4 bg-gray-200 rounded-md dark:bg-black-400"
+          as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
+          href={`/blog/[slug]`}
         >
-          <p className="text-sm text-gray-700 dark:text-gray-400">
-            {post.publishedAt.toLocaleDateString("fr-CA", { timeZone: "UTC" })}
-          </p>
-          <Link
-            as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
-            href={`/blog/[slug]`}
-          >
-            <a className="inline-block mt-2">
-              <p className="font-medium text-emerald-600 hover:text-emerald-700">
-                {post.title}
-              </p>
-            </a>
-          </Link>
-        </div>
+          <a className="p-4 bg-gray-200 border-2 border-transparent rounded-md hover:border-emerald-700 dark:hover:border-emerald-500 dark:bg-black-400">
+            <p className="text-sm text-gray-700 dark:text-gray-400">
+              {post.publishedAt.toLocaleDateString("fr-CA", {
+                timeZone: "UTC",
+              })}
+            </p>
+
+            <p className="inline-block mt-2 font-medium text-black-300 dark:text-gray-300">
+              {post.title}
+            </p>
+          </a>
+        </Link>
       ))}
     </div>
   );

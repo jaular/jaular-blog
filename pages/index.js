@@ -37,7 +37,7 @@ export default function Index() {
           {links.map((link) => (
             <li key={link.name}>
               <a
-                className="inline-flex items-center justify-center font-medium underline text-emerald-600 hover:text-emerald-700"
+                className="inline-flex items-center justify-center font-medium underline text-emerald-700 hover:text-emerald-800 dark:text-emerald-500 dark:hover:text-emerald-600"
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"

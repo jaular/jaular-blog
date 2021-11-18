@@ -37,7 +37,7 @@ export default function Footer() {
               key={item.name}
               href={item.href}
               title={item.name}
-              className="text-black-500 dark:text-white hover:text-emerald-700 dark:hover:text-emerald-700"
+              className="text-black-500 dark:text-white hover:text-emerald-700 dark:hover:text-emerald-500"
               target="_blank"
               rel="noopener noreferrer"
             >

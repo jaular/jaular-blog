@@ -31,9 +31,9 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: theme("colors.emerald.600"),
+              color: theme("colors.emerald.700"),
               "&:hover": {
-                color: theme("colors.emerald.700"),
+                color: theme("colors.emerald.800"),
               },
             },
             "h1,h2,h3,h4,strong": {
@@ -43,7 +43,7 @@ module.exports = {
             "p,ul,ol,li": {
               color: theme("colors.black.300"),
             },
-            code: { color: theme("colors.purple.500") },
+            code: { color: theme("colors.purple.700") },
             "blockquote p:first-of-type::before": false,
             "blockquote p:last-of-type::after": false,
             ol: {
@@ -61,9 +61,9 @@ module.exports = {
         dark: {
           css: {
             a: {
-              color: theme("colors.emerald.600"),
+              color: theme("colors.emerald.500"),
               "&:hover": {
-                color: theme("colors.emerald.700"),
+                color: theme("colors.emerald.600"),
               },
             },
             "h1,h2,h3,h4,strong": {
