@@ -9,6 +9,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrism from "rehype-prism-plus";
 import Container from "@/components/Container";
 import CustomLink from "@/components/CustomLink";
+import BackButton from "@/components/BackButton";
 import Avatar from "@/components/Avatar";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
@@ -27,6 +28,8 @@ const components = {
 export default function PostPage({ source, frontMatter }) {
   return (
     <Container title={frontMatter.title} navigation={navigation}>
+      <BackButton href="/blog" />
+
       <article className="space-y-8">
         <h1 className="text-3xl font-bold tracking-tight text-black-500 dark:text-gray-200 md:text-5xl">
           {frontMatter.title}

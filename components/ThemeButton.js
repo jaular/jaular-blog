@@ -1,7 +1,7 @@
 import useDarkMode from "@/hooks/useDarkMode";
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
 
-export default function ButtonTheme() {
+export default function ThemeButton() {
   const [switchTheme, theme, isMounted] = useDarkMode();
   {
     if (!isMounted) return null;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonTheme from "@/components/ButtonTheme";
+import ThemeButton from "@/components/ThemeButton";
 import { Disclosure } from "@headlessui/react";
 import { MenuAlt4Icon, XIcon } from "@heroicons/react/outline";
 
@@ -50,7 +50,7 @@ export default function Example({ navigation }) {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <ButtonTheme />
+                <ThemeButton />
               </div>
             </div>
           </div>
